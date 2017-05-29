@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1252a992ad164f909edd5eaf14bd8cb5" Name="Diagram1">
+        <EntityTypeShape EntityType="UserModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Auditorium" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Auditorium_type" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Faculty" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Groups" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Profession" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Pulpit" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Student" Width="1.5" PointX="7.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Subject" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Subject_Type" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserModel.Teacher" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="UserModel.AUDITORIUM_AUDITORIUM_TYPE_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UserModel.GROUPS_FACULTY_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UserModel.PROFESSION_FACULTY_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UserModel.PULPIT_FACULTY_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UserModel.GROUPS_PROFESSION_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UserModel.STUDENT_GROUP_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UserModel.SUBJECT_PULPIT_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UserModel.TEACHER_PULPIT_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище UserContext" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Auditorium">
+    <Key>
+      <PropertyRef Name="AuditoriumID" />
+    </Key>
+    <Property Name="AuditoriumID" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="Auditorium_type" Type="char" MaxLength="10" />
+    <Property Name="AUDITORIUM_CAPACITY" Type="int" />
+  </EntityType>
+  <EntityType Name="Auditorium_type">
+    <Key>
+      <PropertyRef Name="AUDITORIUM_TYPE" />
+    </Key>
+    <Property Name="AUDITORIUM_TYPE" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="AUDITORIUM_TYPENAME" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="FacultyID" />
+    </Key>
+    <Property Name="FacultyID" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Faculty_name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="FacultyID" Type="char" MaxLength="10" />
+    <Property Name="ProfessionID" Type="char" MaxLength="20" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6013: Первичный ключ в таблице или представлении "Курсач.dbo.LOG" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+        <EntityType Name="LOG">
+          <Property Name="LOGIN" Type="nvarchar" MaxLength="50" />
+          <Property Name="PASSWORD" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityType Name="Profession">
+    <Key>
+      <PropertyRef Name="ProfessionID" />
+    </Key>
+    <Property Name="ProfessionID" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="Profession_name" Type="varchar" MaxLength="50" />
+    <Property Name="FacultyID" Type="char" MaxLength="10" />
+    <Property Name="Qualification" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Pulpit">
+    <Key>
+      <PropertyRef Name="PulpitID" />
+    </Key>
+    <Property Name="PulpitID" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="Pulpit_name" Type="varchar" MaxLength="100" />
+    <Property Name="FacultyID" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="GroupID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Bday" Type="date" />
+    <Property Name="Info" Type="xml" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="SubjectID" />
+    </Key>
+    <Property Name="SubjectID" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Subject_name" Type="varchar" MaxLength="100" />
+    <Property Name="PulpitID" Type="char" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Subject_Type">
+    <Key>
+      <PropertyRef Name="Subject_TypeID" />
+    </Key>
+    <Property Name="Subject_TypeID" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="Subject_Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TEACHERid" />
+    </Key>
+    <Property Name="TEACHERid" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="TEACHER_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="PULPIT" Type="char" MaxLength="20" />
+    <Property Name="SUBJECT" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="AUDITORIUM_AUDITORIUM_TYPE_FK">
+    <End Role="Auditorium_type" Type="Self.Auditorium_type" Multiplicity="0..1" />
+    <End Role="Auditorium" Type="Self.Auditorium" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Auditorium_type">
+        <PropertyRef Name="AUDITORIUM_TYPE" />
+      </Principal>
+      <Dependent Role="Auditorium">
+        <PropertyRef Name="Auditorium_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GROUPS_FACULTY_FK">
+    <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="FacultyID" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="FacultyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GROUPS_PROFESSION_FK">
+    <End Role="Profession" Type="Self.Profession" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profession">
+        <PropertyRef Name="ProfessionID" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="ProfessionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PROFESSION_FACULTY_FK">
+    <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+    <End Role="Profession" Type="Self.Profession" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="FacultyID" />
+      </Principal>
+      <Dependent Role="Profession">
+        <PropertyRef Name="FacultyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PULPIT_FACULTY_FK">
+    <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+    <End Role="Pulpit" Type="Self.Pulpit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="FacultyID" />
+      </Principal>
+      <Dependent Role="Pulpit">
+        <PropertyRef Name="FacultyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="STUDENT_GROUP_FK">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SUBJECT_PULPIT_FK">
+    <End Role="Pulpit" Type="Self.Pulpit" Multiplicity="0..1" />
+    <End Role="Subject" Type="Self.Subject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pulpit">
+        <PropertyRef Name="PulpitID" />
+      </Principal>
+      <Dependent Role="Subject">
+        <PropertyRef Name="PulpitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TEACHER_PULPIT_FK">
+    <End Role="Pulpit" Type="Self.Pulpit" Multiplicity="0..1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pulpit">
+        <PropertyRef Name="PulpitID" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="PULPIT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище UserContextContainer">
+    <EntitySet Name="Auditorium" EntityType="Self.Auditorium" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Auditorium_type" EntityType="Self.Auditorium_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Faculty" EntityType="Self.Faculty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Profession" EntityType="Self.Profession" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pulpit" EntityType="Self.Pulpit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subject" EntityType="Self.Subject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subject_Type" EntityType="Self.Subject_Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="AUDITORIUM_AUDITORIUM_TYPE_FK" Association="Self.AUDITORIUM_AUDITORIUM_TYPE_FK">
+      <End Role="Auditorium_type" EntitySet="Auditorium_type" />
+      <End Role="Auditorium" EntitySet="Auditorium" />
+    </AssociationSet>
+    <AssociationSet Name="GROUPS_FACULTY_FK" Association="Self.GROUPS_FACULTY_FK">
+      <End Role="Faculty" EntitySet="Faculty" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="GROUPS_PROFESSION_FK" Association="Self.GROUPS_PROFESSION_FK">
+      <End Role="Profession" EntitySet="Profession" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="PROFESSION_FACULTY_FK" Association="Self.PROFESSION_FACULTY_FK">
+      <End Role="Faculty" EntitySet="Faculty" />
+      <End Role="Profession" EntitySet="Profession" />
+    </AssociationSet>
+    <AssociationSet Name="PULPIT_FACULTY_FK" Association="Self.PULPIT_FACULTY_FK">
+      <End Role="Faculty" EntitySet="Faculty" />
+      <End Role="Pulpit" EntitySet="Pulpit" />
+    </AssociationSet>
+    <AssociationSet Name="STUDENT_GROUP_FK" Association="Self.STUDENT_GROUP_FK">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="SUBJECT_PULPIT_FK" Association="Self.SUBJECT_PULPIT_FK">
+      <End Role="Pulpit" EntitySet="Pulpit" />
+      <End Role="Subject" EntitySet="Subject" />
+    </AssociationSet>
+    <AssociationSet Name="TEACHER_PULPIT_FK" Association="Self.TEACHER_PULPIT_FK">
+      <End Role="Pulpit" EntitySet="Pulpit" />
+      <End Role="Teacher" EntitySet="Teacher" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

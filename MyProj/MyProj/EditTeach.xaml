@@ -1,0 +1,35 @@
+﻿<Window x:Class="MyProj.EditTeach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyProj"
+        mc:Ignorable="d"
+        Title="EditTeach" Height="350" Width="500" Closing="MainWindow_Closing">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="20 8 20 8" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="30" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <DataGrid AutoGenerateColumns="False" x:Name="teachGrid">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding TEACHERid}" Header="Преподаватель" Width="100"/>
+                <DataGridTextColumn Binding="{Binding TEACHER_NAME}" Header="ФИО" Width="200"/>
+                <DataGridTextColumn Binding="{Binding PULPIT}" Header="Кафедра" Width="100"/>
+                <DataGridTextColumn Binding="{Binding SUBJECT}" Header="Предмет" Width="220"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel HorizontalAlignment="Center"  Grid.Row="1" Orientation="Horizontal">
+            <Button x:Name="updateButton" Content="Обновить" Click="updateButton_Click"  />
+            <Button x:Name="deleteButton" Content="Удалить" Click="deleteButton_Click"  />
+        </StackPanel>
+    </Grid>
+</Window>

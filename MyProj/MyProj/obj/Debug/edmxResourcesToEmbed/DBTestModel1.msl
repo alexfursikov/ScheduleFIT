@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище UserContext1Container" CdmEntityContainer="UserContext">
+    <EntitySetMapping Name="Auditorium">
+      <EntityTypeMapping TypeName="UserContext1.Auditorium">
+        <MappingFragment StoreEntitySet="Auditorium">
+          <ScalarProperty Name="AuditoriumID" ColumnName="AuditoriumID" />
+          <ScalarProperty Name="Auditorium_type" ColumnName="Auditorium_type" />
+          <ScalarProperty Name="AUDITORIUM_CAPACITY" ColumnName="AUDITORIUM_CAPACITY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Auditorium_type">
+      <EntityTypeMapping TypeName="UserContext1.Auditorium_type">
+        <MappingFragment StoreEntitySet="Auditorium_type">
+          <ScalarProperty Name="AUDITORIUM_TYPE1" ColumnName="AUDITORIUM_TYPE" />
+          <ScalarProperty Name="AUDITORIUM_TYPENAME" ColumnName="AUDITORIUM_TYPENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faculty">
+      <EntityTypeMapping TypeName="UserContext1.Faculty">
+        <MappingFragment StoreEntitySet="Faculty">
+          <ScalarProperty Name="FacultyID" ColumnName="FacultyID" />
+          <ScalarProperty Name="Faculty_name" ColumnName="Faculty_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="UserContext1.Groups">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="FacultyID" ColumnName="FacultyID" />
+          <ScalarProperty Name="ProfessionID" ColumnName="ProfessionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profession">
+      <EntityTypeMapping TypeName="UserContext1.Profession">
+        <MappingFragment StoreEntitySet="Profession">
+          <ScalarProperty Name="ProfessionID" ColumnName="ProfessionID" />
+          <ScalarProperty Name="Profession_name" ColumnName="Profession_name" />
+          <ScalarProperty Name="FacultyID" ColumnName="FacultyID" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pulpit">
+      <EntityTypeMapping TypeName="UserContext1.Pulpit">
+        <MappingFragment StoreEntitySet="Pulpit">
+          <ScalarProperty Name="PulpitID" ColumnName="PulpitID" />
+          <ScalarProperty Name="Pulpit_name" ColumnName="Pulpit_name" />
+          <ScalarProperty Name="FacultyID" ColumnName="FacultyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="UserContext1.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Bday" ColumnName="Bday" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subject">
+      <EntityTypeMapping TypeName="UserContext1.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="Subject_name" ColumnName="Subject_name" />
+          <ScalarProperty Name="PulpitID" ColumnName="PulpitID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subject_Type">
+      <EntityTypeMapping TypeName="UserContext1.Subject_Type">
+        <MappingFragment StoreEntitySet="Subject_Type">
+          <ScalarProperty Name="Subject_Type1" ColumnName="Subject_Type" />
+          <ScalarProperty Name="Subject_Name" ColumnName="Subject_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teacher">
+      <EntityTypeMapping TypeName="UserContext1.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="TEACHERid" ColumnName="TEACHERid" />
+          <ScalarProperty Name="TEACHER_NAME" ColumnName="TEACHER_NAME" />
+          <ScalarProperty Name="PULPIT" ColumnName="PULPIT" />
+          <ScalarProperty Name="SUBJECT" ColumnName="SUBJECT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

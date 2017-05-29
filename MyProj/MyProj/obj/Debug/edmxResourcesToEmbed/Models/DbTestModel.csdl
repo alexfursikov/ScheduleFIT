@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UserModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Auditorium">
+    <Key>
+      <PropertyRef Name="AuditoriumID" />
+    </Key>
+    <Property Name="AuditoriumID" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Auditorium_type" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="AUDITORIUM_CAPACITY" Type="Int32" />
+    <NavigationProperty Name="Auditorium_type1" Relationship="Self.AUDITORIUM_AUDITORIUM_TYPE_FK" FromRole="Auditorium" ToRole="Auditorium_type" />
+  </EntityType>
+  <EntityType Name="Auditorium_type">
+    <Key>
+      <PropertyRef Name="AUDITORIUM_TYPE1" />
+    </Key>
+    <Property Name="AUDITORIUM_TYPE1" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="AUDITORIUM_TYPENAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Auditorium" Relationship="Self.AUDITORIUM_AUDITORIUM_TYPE_FK" FromRole="Auditorium_type" ToRole="Auditorium" />
+  </EntityType>
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="FacultyID" />
+    </Key>
+    <Property Name="FacultyID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Faculty_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Groups" Relationship="Self.GROUPS_FACULTY_FK" FromRole="Faculty" ToRole="Groups" />
+    <NavigationProperty Name="Profession" Relationship="Self.PROFESSION_FACULTY_FK" FromRole="Faculty" ToRole="Profession" />
+    <NavigationProperty Name="Pulpit" Relationship="Self.PULPIT_FACULTY_FK" FromRole="Faculty" ToRole="Pulpit" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="Group_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FacultyID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="ProfessionID" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Faculty" Relationship="Self.GROUPS_FACULTY_FK" FromRole="Groups" ToRole="Faculty" />
+    <NavigationProperty Name="Profession" Relationship="Self.GROUPS_PROFESSION_FK" FromRole="Groups" ToRole="Profession" />
+    <NavigationProperty Name="Student" Relationship="Self.STUDENT_GROUP_FK" FromRole="Groups" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Profession">
+    <Key>
+      <PropertyRef Name="ProfessionID" />
+    </Key>
+    <Property Name="ProfessionID" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Profession_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FacultyID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Qualification" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Faculty" Relationship="Self.PROFESSION_FACULTY_FK" FromRole="Profession" ToRole="Faculty" />
+    <NavigationProperty Name="Groups" Relationship="Self.GROUPS_PROFESSION_FK" FromRole="Profession" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="Pulpit">
+    <Key>
+      <PropertyRef Name="PulpitID" />
+    </Key>
+    <Property Name="PulpitID" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Pulpit_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FacultyID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Faculty" Relationship="Self.PULPIT_FACULTY_FK" FromRole="Pulpit" ToRole="Faculty" />
+    <NavigationProperty Name="Subject" Relationship="Self.SUBJECT_PULPIT_FK" FromRole="Pulpit" ToRole="Subject" />
+    <NavigationProperty Name="Teacher" Relationship="Self.TEACHER_PULPIT_FK" FromRole="Pulpit" ToRole="Teacher" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <Property Name="GroupID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Bday" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Groups" Relationship="Self.STUDENT_GROUP_FK" FromRole="Student" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="SubjectID" />
+    </Key>
+    <Property Name="SubjectID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Subject_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PulpitID" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Pulpit" Relationship="Self.SUBJECT_PULPIT_FK" FromRole="Subject" ToRole="Pulpit" />
+  </EntityType>
+  <EntityType Name="Subject_Type">
+    <Key>
+      <PropertyRef Name="Subject_TypeID" />
+    </Key>
+    <Property Name="Subject_TypeID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Subject_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TEACHERid" />
+    </Key>
+    <Property Name="TEACHERid" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TEACHER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PULPIT" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="SUBJECT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Pulpit1" Relationship="Self.TEACHER_PULPIT_FK" FromRole="Teacher" ToRole="Pulpit" />
+  </EntityType>
+  <Association Name="AUDITORIUM_AUDITORIUM_TYPE_FK">
+    <End Role="Auditorium_type" Type="Self.Auditorium_type" Multiplicity="0..1" />
+    <End Role="Auditorium" Type="Self.Auditorium" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Auditorium_type">
+        <PropertyRef Name="AUDITORIUM_TYPE1" />
+      </Principal>
+      <Dependent Role="Auditorium">
+        <PropertyRef Name="Auditorium_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GROUPS_FACULTY_FK">
+    <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="FacultyID" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="FacultyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PROFESSION_FACULTY_FK">
+    <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+    <End Role="Profession" Type="Self.Profession" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="FacultyID" />
+      </Principal>
+      <Dependent Role="Profession">
+        <PropertyRef Name="FacultyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PULPIT_FACULTY_FK">
+    <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+    <End Role="Pulpit" Type="Self.Pulpit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="FacultyID" />
+      </Principal>
+      <Dependent Role="Pulpit">
+        <PropertyRef Name="FacultyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GROUPS_PROFESSION_FK">
+    <End Role="Profession" Type="Self.Profession" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profession">
+        <PropertyRef Name="ProfessionID" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="ProfessionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="STUDENT_GROUP_FK">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SUBJECT_PULPIT_FK">
+    <End Role="Pulpit" Type="Self.Pulpit" Multiplicity="0..1" />
+    <End Role="Subject" Type="Self.Subject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pulpit">
+        <PropertyRef Name="PulpitID" />
+      </Principal>
+      <Dependent Role="Subject">
+        <PropertyRef Name="PulpitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TEACHER_PULPIT_FK">
+    <End Role="Pulpit" Type="Self.Pulpit" Multiplicity="0..1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pulpit">
+        <PropertyRef Name="PulpitID" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="PULPIT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UserContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="Auditorium" EntityType="Self.Auditorium" />
+    <EntitySet Name="Auditorium_type" EntityType="Self.Auditorium_type" />
+    <EntitySet Name="Faculty" EntityType="Self.Faculty" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" />
+    <EntitySet Name="Profession" EntityType="Self.Profession" />
+    <EntitySet Name="Pulpit" EntityType="Self.Pulpit" />
+    <EntitySet Name="Student" EntityType="Self.Student" />
+    <EntitySet Name="Subject" EntityType="Self.Subject" />
+    <EntitySet Name="Subject_Type" EntityType="Self.Subject_Type" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" />
+    <AssociationSet Name="AUDITORIUM_AUDITORIUM_TYPE_FK" Association="Self.AUDITORIUM_AUDITORIUM_TYPE_FK">
+      <End Role="Auditorium_type" EntitySet="Auditorium_type" />
+      <End Role="Auditorium" EntitySet="Auditorium" />
+    </AssociationSet>
+    <AssociationSet Name="GROUPS_FACULTY_FK" Association="Self.GROUPS_FACULTY_FK">
+      <End Role="Faculty" EntitySet="Faculty" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="PROFESSION_FACULTY_FK" Association="Self.PROFESSION_FACULTY_FK">
+      <End Role="Faculty" EntitySet="Faculty" />
+      <End Role="Profession" EntitySet="Profession" />
+    </AssociationSet>
+    <AssociationSet Name="PULPIT_FACULTY_FK" Association="Self.PULPIT_FACULTY_FK">
+      <End Role="Faculty" EntitySet="Faculty" />
+      <End Role="Pulpit" EntitySet="Pulpit" />
+    </AssociationSet>
+    <AssociationSet Name="GROUPS_PROFESSION_FK" Association="Self.GROUPS_PROFESSION_FK">
+      <End Role="Profession" EntitySet="Profession" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="STUDENT_GROUP_FK" Association="Self.STUDENT_GROUP_FK">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="SUBJECT_PULPIT_FK" Association="Self.SUBJECT_PULPIT_FK">
+      <End Role="Pulpit" EntitySet="Pulpit" />
+      <End Role="Subject" EntitySet="Subject" />
+    </AssociationSet>
+    <AssociationSet Name="TEACHER_PULPIT_FK" Association="Self.TEACHER_PULPIT_FK">
+      <End Role="Pulpit" EntitySet="Pulpit" />
+      <End Role="Teacher" EntitySet="Teacher" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

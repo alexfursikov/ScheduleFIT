@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schedule>
+  <day dayValue="Понедельник">
+    <times timeValue="8.00-9.35">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="9.50-11.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="11.40-13.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="13.50-15.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="15.40-17.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+  </day>
+  <day dayValue="Вторник">
+    <times timeValue="8.00-9.35">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="9.50-11.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="11.40-13.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="13.50-15.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="15.40-17.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+  </day>
+  <day dayValue="Среда">
+    <times timeValue="8.00-9.35">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="9.50-11.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="11.40-13.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="13.50-15.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="15.40-17.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+  </day>
+  <day dayValue="Четверг">
+    <times timeValue="8.00-9.35">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="9.50-11.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="11.40-13.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="13.50-15.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="15.40-17.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+  </day>
+  <day dayValue="Пятница">
+    <times timeValue="8.00-9.35">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="9.50-11.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="11.40-13.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="13.50-15.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="15.40-17.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+  </day>
+  <day dayValue="Суббота">
+    <times timeValue="8.00-9.35">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="9.50-11.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="11.40-13.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="13.50-15.25">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+    <times timeValue="15.40-17.15">
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+      <group groupID="1" podgroupID="1" />
+      <group groupID="2" podgroupID="2" />
+      <group groupID="3" podgroupID="1" />
+      <group groupID="4" podgroupID="2" />
+      <group groupID="5" podgroupID="1" />
+      <group groupID="6" podgroupID="2" />
+      <group groupID="7" podgroupID="1" />
+      <group groupID="8" podgroupID="2" />
+      <group groupID="9" podgroupID="1" />
+      <group groupID="10" podgroupID="2" />
+    </times>
+  </day>
+</schedule>
